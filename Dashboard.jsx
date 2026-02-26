@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Dashboard.css";
 
-// activeTab అనే prop ని Navbar నుండి App.js ద్వారా ఇక్కడకు తీసుకుంటున్నాం
+
 export default function Dashboard({ activeTab }) {
   const [achievements, setAchievements] = useState(() => {
     const saved = localStorage.getItem("achievements");
@@ -33,7 +33,7 @@ export default function Dashboard({ activeTab }) {
     setDate("");
     setDescription("");
     
-    // Add cheshaka automatically Dashboard tab ki vellalante (optional)
+    
     alert("Achievement Added Successfully!");
   };
 
@@ -161,4 +161,5 @@ export default function Dashboard({ activeTab }) {
       )}
     </div>
   );
+
 }
